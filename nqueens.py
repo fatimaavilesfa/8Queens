@@ -1,4 +1,4 @@
-#create a board n*n (8*8)
+
 #a 0 is no queen and 1 is equal queen
 #when the place of the queen atack other queen false and start over
 
@@ -17,14 +17,14 @@ def possible(x, y):
 solution = []
 tried = []
 
-def solve(x, y=1):
-	if x < 9 and y < 9:
+def solve(x, y=1, n):
+	if x < n and y < n:
 		if possible(x, y) and [x, y] not in tried:
 			solution.append([x, y])
 		else:
 			return solve(x + 1)
 			return solve(x, y + 1)
-		elif y > 8:
+		elif y > n:
 			for [c, d] in tried[:]:
 				if solution[x - 2][0] < c:
 					tried.remove([c, d])
