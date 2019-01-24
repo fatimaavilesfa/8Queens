@@ -7,7 +7,7 @@
 def possible(x, y):
 	for[a, b] in solution:
 	  if y == b:
-		return False
+		return False;
 	  if abs(x - a) == ab(y - b):
 		return False
 			return True
