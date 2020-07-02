@@ -1,5 +1,5 @@
 
-N Queens Python3
+8 Queens Python3
 
 These are the different aspect of the project you can work on:
 1. determine all possible solutions for a given N where N ≥ 8. Bonus points for a higher N where N is the size of the board / number of queens
